@@ -39,3 +39,8 @@ Beyond backend development, I have full-stack capabilities and I'm a collaborati
 - **WhatsApp (Egypt)**: https://wa.me/201009739491
 
 ---
+
+## 📚 Technical Documentation
+
+Check out my comprehensive technical documentation covering 30+ topics:
+**[Interview Questions & Technical Documentation](../README.md)**
