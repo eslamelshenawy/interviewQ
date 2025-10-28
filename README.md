@@ -15,7 +15,7 @@
 - **[Kafka](./kafka/)** | **[RabbitMQ](./RabbitMQ/)** | **[ActiveMQ](./ActiveMQ/)**
 
 ## DevOps & Cloud
-- **[Docker](./Docker/)** | **[Kubernetes](./Kubernetes/)** | **[OpenShift](./OpenShift/)** | **[CI/CD](./CI-CD/)**
+- **[Docker](./Docker/)** | **[Kubernetes](./Kubernetes/)** | **[OpenShift](./OpenShift/)** | **[CI/CD](./CI-CD/)** | **[Jira](./Jira/README.md)**
 
 ## Database & Security
 - **[Database](./Database/)** | **[Security](./Security/)**
