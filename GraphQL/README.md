@@ -16,11 +16,13 @@
 
 ---
 
-## ما هو GraphQL
+## ما هو GraphQL / What is GraphQL
+
+### العربية
 
 **GraphQL** هو لغة استعلام (Query Language) ووقت تشغيل (Runtime) لـ APIs تم تطويره بواسطة Facebook في 2012 وأصبح Open Source في 2015.
 
-### المزايا الرئيسية
+#### المزايا الرئيسية
 - **Single Endpoint**: نقطة واحدة فقط لجميع الطلبات
 - **Client-Specified Queries**: العميل يحدد البيانات التي يريدها بالضبط
 - **No Over-fetching**: لا تحصل على بيانات زائدة
@@ -29,19 +31,46 @@
 - **Introspection**: استكشاف Schema تلقائياً
 - **Real-time Updates**: دعم Subscriptions
 
-### متى تستخدم GraphQL؟
+#### متى تستخدم GraphQL؟
 - ✅ تطبيقات معقدة مع بيانات متداخلة
 - ✅ تطبيقات موبايل (تقليل عدد الطلبات)
 - ✅ عندما تحتاج مرونة في البيانات
 - ✅ عند وجود عملاء متعددين بمتطلبات مختلفة
 - ✅ عندما تريد تقليل Bandwidth
 
-### متى تستخدم REST؟
+#### متى تستخدم REST؟
 - ✅ APIs بسيطة
 - ✅ عمليات CRUD أساسية
 - ✅ عندما تحتاج HTTP Caching
 - ✅ File uploads/downloads
 - ✅ فريق ليس لديه خبرة في GraphQL
+
+### English
+
+**GraphQL** is a query language and runtime for APIs developed by Facebook in 2012 and became open source in 2015.
+
+#### Key Advantages
+- **Single Endpoint**: Only one endpoint for all requests
+- **Client-Specified Queries**: The client specifies exactly what data it needs
+- **No Over-fetching**: You don't get unnecessary extra data
+- **No Under-fetching**: You get all required data in a single request
+- **Strong Typing**: Powerful type system
+- **Introspection**: Automatic schema exploration
+- **Real-time Updates**: Built-in Subscriptions support
+
+#### When to Use GraphQL?
+- ✅ Complex applications with nested data
+- ✅ Mobile applications (reduce number of requests)
+- ✅ When you need flexibility in data fetching
+- ✅ Multiple clients with different requirements
+- ✅ When you want to reduce bandwidth usage
+
+#### When to Use REST?
+- ✅ Simple APIs
+- ✅ Basic CRUD operations
+- ✅ When you need HTTP caching
+- ✅ File uploads/downloads
+- ✅ Team without GraphQL experience
 
 ---
 

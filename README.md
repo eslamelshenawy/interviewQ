@@ -95,6 +95,9 @@ Application security, OAuth2, JWT, and best practices | أمان التطبيق�
 
 ## Programming Concepts
 
+### **[Design Patterns](./Design-Patterns/)**
+SOLID principles and design patterns (Creational, Structural, Behavioral) | مبادئ SOLID وأنماط التصميم
+
 ### **[OOP](./OOP/)**
 Object-Oriented Programming principles and patterns | مبادئ البرمجة الكائنية والأنماط
 

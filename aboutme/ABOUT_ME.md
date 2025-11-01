@@ -1,6 +1,6 @@
 # About Me
 
-I am **Eslam Mahmoud El-Shenawy**, a hard-working and self-motivated Senior Java Software Engineer with over 8 years of professional experience in building scalable, enterprise-grade applications. I hold a B.Sc. in Computer Science from Cairo University (2011–2015) and have worked across diverse industries in Egypt, Bahrain, and Saudi Arabia.
+I am **Eslam Mahmoud El-Shenawy**, a hard-working and self-motivated Senior Java Software Engineer with over 9 years of professional experience in building scalable, enterprise-grade applications. I hold a B.Sc. in Computer Science from Cairo University (2011–2015) and have worked across diverse industries in Egypt, Bahrain, and Saudi Arabia.
 
 ## Professional Summary
 

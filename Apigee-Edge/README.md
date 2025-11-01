@@ -1,23 +1,37 @@
-# Apigee Edge - دليل شامل
+# Apigee Edge - Comprehensive Guide | دليل شامل
 
-## المحتويات
-1. [ما هو Apigee Edge](#ما-هو-apigee-edge)
-2. [المفاهيم الأساسية](#المفاهيم-الأساسية)
-3. [المكونات الرئيسية](#المكونات-الرئيسية)
-4. [الميزات الرئيسية](#الميزات-الرئيسية)
+## Table of Contents | المحتويات
+1. [What is Apigee Edge | ما هو Apigee Edge](#what-is-apigee-edge--ما-هو-apigee-edge)
+2. [Core Concepts | المفاهيم الأساسية](#core-concepts--المفاهيم-الأساسية)
+3. [Main Components | المكونات الرئيسية](#main-components--المكونات-الرئيسية)
+4. [Key Features | الميزات الرئيسية](#key-features--الميزات-الرئيسية)
 5. [API Proxies](#api-proxies)
 6. [Policies](#policies)
-7. [حالات الاستخدام](#حالات-الاستخدام)
-8. [أمثلة عملية](#أمثلة-عملية)
-9. [أسئلة المقابلات](#أسئلة-المقابلات)
+7. [Use Cases | حالات الاستخدام](#use-cases--حالات-الاستخدام)
+8. [Practical Examples | أمثلة عملية](#practical-examples--أمثلة-عملية)
+9. [Interview Questions | أسئلة المقابلات](#interview-questions--أسئلة-المقابلات)
 
 ---
 
-## ما هو Apigee Edge
+## What is Apigee Edge | ما هو Apigee Edge
 
+**English:**
+**Apigee Edge** is a Google Cloud API Management platform that helps design, secure, deploy, monitor, and analyze APIs. Apigee provides an intermediary layer between Backend Services and Client Applications.
+
+**العربية:**
 **Apigee Edge** هو منصة API Management من Google Cloud تساعد في تصميم، تأمين، نشر، مراقبة، وتحليل الـ APIs. يوفر Apigee طبقة وسيطة بين الـ Backend Services والـ Client Applications.
 
-### المزايا الرئيسية
+### Key Advantages | المزايا الرئيسية
+
+**English:**
+- **API Gateway**: Request routing and management
+- **Security**: Secure APIs with multiple methods (OAuth, JWT, API Keys)
+- **Analytics**: Detailed analytics on API usage
+- **Developer Portal**: Portal for developers to explore APIs
+- **Monetization**: Ability to monetize APIs
+- **Mediation**: Transform requests and responses
+
+**العربية:**
 - **API Gateway**: توجيه وإدارة الطلبات
 - **Security**: تأمين APIs بطرق متعددة (OAuth, JWT, API Keys)
 - **Analytics**: تحليلات مفصلة عن استخدام APIs
@@ -27,58 +41,117 @@
 
 ---
 
-## المفاهيم الأساسية
+## Core Concepts | المفاهيم الأساسية
 
 ### 1. API Proxy
-واجهة تمثل الـ Backend Service، حيث يتم استقبال الطلبات من العملاء وتوجيهها إلى الـ Backend.
+
+**English:** An interface representing the Backend Service, where requests from clients are received and routed to the Backend.
+
+**العربية:** واجهة تمثل الـ Backend Service، حيث يتم استقبال الطلبات من العملاء وتوجيهها إلى الـ Backend.
 
 ### 2. Target Endpoint
-الـ Backend Service الفعلي الذي يتم استدعاؤه من خلال API Proxy.
+
+**English:** The actual Backend Service that is called through the API Proxy.
+
+**العربية:** الـ Backend Service الفعلي الذي يتم استدعاؤه من خلال API Proxy.
 
 ### 3. Proxy Endpoint
-النقطة التي يستقبل فيها Apigee الطلبات من العملاء.
+
+**English:** The point where Apigee receives requests from clients.
+
+**العربية:** النقطة التي يستقبل فيها Apigee الطلبات من العملاء.
 
 ### 4. Policies
-قواعد وإجراءات تطبق على الطلبات والاستجابات (مثل Authentication، Rate Limiting، Transformation).
+
+**English:** Rules and procedures applied to requests and responses (such as Authentication, Rate Limiting, Transformation).
+
+**العربية:** قواعد وإجراءات تطبق على الطلبات والاستجابات (مثل Authentication، Rate Limiting، Transformation).
 
 ### 5. Products
-مجموعة من API Proxies يتم تجميعها معًا لتوفيرها للمطورين.
+
+**English:** A collection of API Proxies bundled together to be provided to developers.
+
+**العربية:** مجموعة من API Proxies يتم تجميعها معًا لتوفيرها للمطورين.
 
 ### 6. Developer Apps
-التطبيقات التي يقوم المطورون بإنشائها للوصول إلى APIs.
+
+**English:** Applications created by developers to access APIs.
+
+**العربية:** التطبيقات التي يقوم المطورون بإنشائها للوصول إلى APIs.
 
 ### 7. Environment
-بيئات مختلفة (Development, Testing, Production) لنشر API Proxies.
+
+**English:** Different environments (Development, Testing, Production) for deploying API Proxies.
+
+**العربية:** بيئات مختلفة (Development, Testing, Production) لنشر API Proxies.
 
 ---
 
-## المكونات الرئيسية
+## Main Components | المكونات الرئيسية
 
 ### 1. Management Server
+
+**English:**
+- Manage and configure API Proxies
+- User and permission management
+- Deploy APIs to different environments
+
+**العربية:**
 - إدارة وتهيئة API Proxies
 - إدارة المستخدمين والصلاحيات
 - نشر APIs على البيئات المختلفة
 
 ### 2. Runtime (Message Processor)
+
+**English:**
+- Process requests and responses
+- Apply Policies
+- Route requests to Backend
+
+**العربية:**
 - معالجة الطلبات والاستجابات
 - تطبيق الـ Policies
 - توجيه الطلبات إلى Backend
 
 ### 3. Analytics
+
+**English:**
+- Collect data on API usage
+- Detailed performance reports
+- Monitor errors and issues
+
+**العربية:**
 - جمع البيانات عن استخدام APIs
 - تقارير مفصلة عن الأداء
 - مراقبة الأخطاء والمشاكل
 
 ### 4. Developer Portal
+
+**English:**
+- Interface for developers
+- API Documentation
+- API Keys and application management
+
+**العربية:**
 - واجهة للمطورين
 - وثائق APIs (API Documentation)
 - إدارة API Keys والتطبيقات
 
 ---
 
-## الميزات الرئيسية
+## Key Features | الميزات الرئيسية
 
 ### 1. Traffic Management
+
+**English:**
+```yaml
+Rate Limiting:
+  - Spike Arrest: Prevent sudden attack spikes
+  - Quota: Limit number of requests in a time period
+  - Concurrent Rate Limit: Limit number of concurrent requests
+```
+
+**العربية:**
 ```yaml
 Rate Limiting:
   - Spike Arrest: منع الهجمات المفاجئة
@@ -87,6 +160,15 @@ Rate Limiting:
 ```
 
 ### 2. Security Features
+
+**English:**
+- **API Keys**: Keys for access verification
+- **OAuth 2.0**: Tokens for authorization
+- **JWT**: JSON Web Tokens verification
+- **SAML**: Security Assertion Markup Language support
+- **IP Whitelisting/Blacklisting**: Access control by IP
+
+**العربية:**
 - **API Keys**: مفاتيح للتحقق من الوصول
 - **OAuth 2.0**: توكينات للتفويض
 - **JWT**: التحقق من JSON Web Tokens
@@ -94,17 +176,34 @@ Rate Limiting:
 - **IP Whitelisting/Blacklisting**: التحكم بالوصول حسب IP
 
 ### 3. Mediation & Transformation
+
+**English:**
+- Convert XML to JSON and vice versa
+- Modify Headers
+- Change data structure (Payload Transformation)
+- JavaScript and Python policies for custom processing
+
+**العربية:**
 - تحويل XML إلى JSON والعكس
 - تعديل Headers
 - تغيير هيكل البيانات (Payload Transformation)
 - JavaScript و Python policies لمعالجة مخصصة
 
 ### 4. Caching
+
+**English:**
+- Response Caching to improve performance
+- Reduce load on Backend Services
+- Cache Management Policies
+
+**العربية:**
 - Response Caching لتحسين الأداء
 - تقليل الحمل على Backend Services
 - Cache Management Policies
 
 ### 5. Analytics & Monitoring
+
+**English & العربية:**
 - Real-time Analytics
 - Custom Reports
 - Error Analysis
@@ -115,8 +214,9 @@ Rate Limiting:
 
 ## API Proxies
 
-### هيكل API Proxy
+### API Proxy Structure | هيكل API Proxy
 
+**English & العربية:**
 ```
 API Proxy
 ├── Proxy Endpoint (ProxyEndpoint)
@@ -134,8 +234,9 @@ API Proxy
     └── XSL
 ```
 
-### مراحل معالجة الطلب (Request Flow)
+### Request Processing Stages (Request Flow) | مراحل معالجة الطلب
 
+**English & العربية:**
 ```
 Client Request
     ↓
@@ -290,31 +391,49 @@ context.setVariable("response.content", JSON.stringify(response));
 
 ---
 
-## حالات الاستخدام
+## Use Cases | حالات الاستخدام
 
-### 1. API Gateway للـ Microservices
-استخدام Apigee كنقطة دخول واحدة لجميع Microservices.
+### 1. API Gateway for Microservices | API Gateway للـ Microservices
+
+**English:** Use Apigee as a single entry point for all Microservices.
+
+**العربية:** استخدام Apigee كنقطة دخول واحدة لجميع Microservices.
 
 ### 2. Legacy System Modernization
-ربط Legacy Systems القديمة مع تطبيقات حديثة من خلال APIs.
+
+**English:** Connect old Legacy Systems with modern applications through APIs.
+
+**العربية:** ربط Legacy Systems القديمة مع تطبيقات حديثة من خلال APIs.
 
 ### 3. Mobile Backend
-توفير APIs محسنة لتطبيقات الموبايل مع Rate Limiting وSecurity.
+
+**English:** Provide optimized APIs for mobile applications with Rate Limiting and Security.
+
+**العربية:** توفير APIs محسنة لتطبيقات الموبايل مع Rate Limiting وSecurity.
 
 ### 4. Third-Party Integration
-توفير APIs للشركاء الخارجيين مع تحكم في الوصول والاستخدام.
+
+**English:** Provide APIs to external partners with access and usage control.
+
+**العربية:** توفير APIs للشركاء الخارجيين مع تحكم في الوصول والاستخدام.
 
 ### 5. API Monetization
-تحقيق الدخل من APIs من خلال نماذج الاشتراك والدفع.
+
+**English:** Generate revenue from APIs through subscription and payment models.
+
+**العربية:** تحقيق الدخل من APIs من خلال نماذج الاشتراك والدفع.
 
 ### 6. Data Transformation
-تحويل البيانات بين صيغ مختلفة (XML ↔ JSON).
+
+**English:** Transform data between different formats (XML ↔ JSON).
+
+**العربية:** تحويل البيانات بين صيغ مختلفة (XML ↔ JSON).
 
 ---
 
-## أمثلة عملية
+## Practical Examples | أمثلة عملية
 
-### مثال 1: إنشاء API Proxy بسيط
+### Example 1: Creating a Simple API Proxy | مثال 1: إنشاء API Proxy بسيط
 
 #### Proxy Endpoint Configuration
 ```xml
@@ -395,9 +514,9 @@ context.setVariable("response.content", JSON.stringify(response));
 </TargetEndpoint>
 ```
 
-### مثال 2: OAuth 2.0 Implementation
+### Example 2: OAuth 2.0 Implementation | مثال 2: OAuth 2.0 Implementation
 
-#### Policy للحصول على Access Token
+#### Policy to Get Access Token | Policy للحصول على Access Token
 ```xml
 <OAuthV2 name="OAuth-GenerateAccessToken">
     <Operation>GenerateAccessToken</Operation>
@@ -411,7 +530,7 @@ context.setVariable("response.content", JSON.stringify(response));
 </OAuthV2>
 ```
 
-#### Policy للتحقق من Access Token
+#### Policy to Verify Access Token | Policy للتحقق من Access Token
 ```xml
 <OAuthV2 name="OAuth-VerifyAccessToken">
     <Operation>VerifyAccessToken</Operation>
@@ -419,7 +538,7 @@ context.setVariable("response.content", JSON.stringify(response));
 </OAuthV2>
 ```
 
-### مثال 3: Rate Limiting مع Quota
+### Example 3: Rate Limiting with Quota | مثال 3: Rate Limiting مع Quota
 
 ```xml
 <!-- Spike Arrest: 100 requests per minute -->
@@ -439,9 +558,9 @@ context.setVariable("response.content", JSON.stringify(response));
 </Quota>
 ```
 
-### مثال 4: Request/Response Transformation
+### Example 4: Request/Response Transformation | مثال 4: Request/Response Transformation
 
-#### تحويل XML Request إلى JSON
+#### Convert XML Request to JSON | تحويل XML Request إلى JSON
 ```xml
 <XMLToJSON name="XML-to-JSON">
     <Source>request</Source>
@@ -466,7 +585,7 @@ context.setVariable("response.content", JSON.stringify(response));
 </AssignMessage>
 ```
 
-### مثال 5: Error Handling
+### Example 5: Error Handling | مثال 5: Error Handling
 
 ```xml
 <FaultRules>
@@ -486,7 +605,7 @@ context.setVariable("response.content", JSON.stringify(response));
 </FaultRules>
 ```
 
-AssignMessage للأخطاء:
+AssignMessage for Errors | AssignMessage للأخطاء:
 ```xml
 <AssignMessage name="AM-InvalidAPIKeyMessage">
     <Set>
@@ -506,78 +625,145 @@ AssignMessage للأخطاء:
 
 ---
 
-## أسئلة المقابلات
+## Interview Questions | أسئلة المقابلات
 
-### أسئلة أساسية
+### Basic Questions | أسئلة أساسية
 
-**1. ما هو Apigee Edge ولماذا نستخدمه؟**
-- **الإجابة**: Apigee Edge هو API Management Platform يوفر:
-  - API Gateway للتوجيه والأمان
-  - Traffic Management (Rate Limiting, Quota)
-  - Analytics وMonitoring
-  - Developer Portal
-  - Monetization
+**1. What is Apigee Edge and why do we use it? | ما هو Apigee Edge ولماذا نستخدمه؟**
 
-**2. ما الفرق بين Proxy Endpoint و Target Endpoint؟**
-- **الإجابة**:
-  - **Proxy Endpoint**: النقطة التي يستقبل فيها Apigee الطلبات من العملاء
-  - **Target Endpoint**: Backend Service الفعلي الذي يتم استدعاؤه
+**English Answer:**
+Apigee Edge is an API Management Platform that provides:
+- API Gateway for routing and security
+- Traffic Management (Rate Limiting, Quota)
+- Analytics and Monitoring
+- Developer Portal
+- Monetization
 
-**3. ما هي الـ Policies في Apigee؟**
-- **الإجابة**: Policies هي قواعد وإجراءات تطبق على الطلبات والاستجابات مثل:
-  - Security (OAuth, JWT, API Keys)
-  - Traffic Management (Spike Arrest, Quota)
-  - Mediation (JSON-XML Conversion)
-  - Caching
+**الإجابة بالعربية:**
+Apigee Edge هو API Management Platform يوفر:
+- API Gateway للتوجيه والأمان
+- Traffic Management (Rate Limiting, Quota)
+- Analytics وMonitoring
+- Developer Portal
+- Monetization
 
-**4. ما الفرق بين Spike Arrest و Quota؟**
-- **الإجابة**:
-  - **Spike Arrest**: يحمي من الطلبات المفاجئة (short-term)، مثل 10 طلبات في الدقيقة
-  - **Quota**: يحدد عدد الطلبات في فترة زمنية طويلة (long-term)، مثل 10000 طلب في الشهر
+**2. What is the difference between Proxy Endpoint and Target Endpoint? | ما الفرق بين Proxy Endpoint و Target Endpoint؟**
 
-**5. كيف يعمل Request Flow في Apigee؟**
-- **الإجابة**:
+**English Answer:**
+- **Proxy Endpoint**: The point where Apigee receives requests from clients
+- **Target Endpoint**: The actual Backend Service that is invoked
+
+**الإجابة بالعربية:**
+- **Proxy Endpoint**: النقطة التي يستقبل فيها Apigee الطلبات من العملاء
+- **Target Endpoint**: Backend Service الفعلي الذي يتم استدعاؤه
+
+**3. What are Policies in Apigee? | ما هي الـ Policies في Apigee؟**
+
+**English Answer:**
+Policies are rules and procedures applied to requests and responses such as:
+- Security (OAuth, JWT, API Keys)
+- Traffic Management (Spike Arrest, Quota)
+- Mediation (JSON-XML Conversion)
+- Caching
+
+**الإجابة بالعربية:**
+Policies هي قواعد وإجراءات تطبق على الطلبات والاستجابات مثل:
+- Security (OAuth, JWT, API Keys)
+- Traffic Management (Spike Arrest, Quota)
+- Mediation (JSON-XML Conversion)
+- Caching
+
+**4. What is the difference between Spike Arrest and Quota? | ما الفرق بين Spike Arrest و Quota؟**
+
+**English Answer:**
+- **Spike Arrest**: Protects against sudden spikes (short-term), e.g., 10 requests per minute
+- **Quota**: Limits the number of requests over a longer period (long-term), e.g., 10000 requests per month
+
+**الإجابة بالعربية:**
+- **Spike Arrest**: يحمي من الطلبات المفاجئة (short-term)، مثل 10 طلبات في الدقيقة
+- **Quota**: يحدد عدد الطلبات في فترة زمنية طويلة (long-term)، مثل 10000 طلب في الشهر
+
+**5. How does Request Flow work in Apigee? | كيف يعمل Request Flow في Apigee؟**
+
+**English & العربية:**
 ```
 Client → ProxyEndpoint PreFlow → Conditional Flows → PostFlow
 → TargetEndpoint PreFlow → Backend → TargetEndpoint PostFlow
 → ProxyEndpoint PostFlow → Client
 ```
 
-### أسئلة متقدمة
+### Advanced Questions | أسئلة متقدمة
 
-**6. كيف تنفذ OAuth 2.0 في Apigee؟**
-- **الإجابة**:
-  - استخدام OAuthV2 Policy
-  - Operations: GenerateAccessToken, VerifyAccessToken, RefreshAccessToken
-  - دعم Grant Types مختلفة (client_credentials, password, authorization_code)
+**6. How do you implement OAuth 2.0 in Apigee? | كيف تنفذ OAuth 2.0 في Apigee؟**
 
-**7. كيف تحسن أداء APIs باستخدام Apigee؟**
-- **الإجابة**:
-  - **Response Cache**: تخزين الاستجابات مؤقتاً
-  - **Edge Microgateway**: لتقليل Latency
-  - **Load Balancing**: توزيع الحمل على Backend Servers
-  - **Compression**: ضغط البيانات
+**English Answer:**
+- Use OAuthV2 Policy
+- Operations: GenerateAccessToken, VerifyAccessToken, RefreshAccessToken
+- Support for different Grant Types (client_credentials, password, authorization_code)
 
-**8. ما هي Shared Flows وكيف تستخدمها؟**
-- **الإجابة**: Shared Flows هي مجموعة من Policies يمكن إعادة استخدامها عبر API Proxies مختلفة:
-  - تقلل التكرار
-  - سهلة الصيانة
-  - مثال: Security checks, Logging, Error handling
+**الإجابة بالعربية:**
+- استخدام OAuthV2 Policy
+- Operations: GenerateAccessToken, VerifyAccessToken, RefreshAccessToken
+- دعم Grant Types مختلفة (client_credentials, password, authorization_code)
 
-**9. كيف تتعامل مع الأخطاء في Apigee؟**
-- **الإجابة**:
-  - استخدام FaultRules
-  - RaiseFault Policy لإنشاء أخطاء مخصصة
-  - AssignMessage لتخصيص رسائل الأخطاء
-  - DefaultFaultRule للأخطاء غير المعالجة
+**7. How do you improve API performance using Apigee? | كيف تحسن أداء APIs باستخدام Apigee؟**
 
-**10. ما الفرق بين API Product و API Proxy؟**
-- **الإجابة**:
-  - **API Proxy**: التطبيق الفعلي الذي يعالج الطلبات
-  - **API Product**: مجموعة من API Proxies يتم تجميعها للمطورين مع Quota وAccess Control
+**English Answer:**
+- **Response Cache**: Cache responses temporarily
+- **Edge Microgateway**: To reduce Latency
+- **Load Balancing**: Distribute load across Backend Servers
+- **Compression**: Data compression
 
-**11. كيف تنفذ Service Callout في Apigee؟**
-- **الإجابة**: استخدام ServiceCallout Policy لاستدعاء خدمة خارجية:
+**الإجابة بالعربية:**
+- **Response Cache**: تخزين الاستجابات مؤقتاً
+- **Edge Microgateway**: لتقليل Latency
+- **Load Balancing**: توزيع الحمل على Backend Servers
+- **Compression**: ضغط البيانات
+
+**8. What are Shared Flows and how do you use them? | ما هي Shared Flows وكيف تستخدمها؟**
+
+**English Answer:**
+Shared Flows are a collection of Policies that can be reused across different API Proxies:
+- Reduce duplication
+- Easy to maintain
+- Examples: Security checks, Logging, Error handling
+
+**الإجابة بالعربية:**
+Shared Flows هي مجموعة من Policies يمكن إعادة استخدامها عبر API Proxies مختلفة:
+- تقلل التكرار
+- سهلة الصيانة
+- مثال: Security checks, Logging, Error handling
+
+**9. How do you handle errors in Apigee? | كيف تتعامل مع الأخطاء في Apigee؟**
+
+**English Answer:**
+- Use FaultRules
+- RaiseFault Policy to create custom errors
+- AssignMessage to customize error messages
+- DefaultFaultRule for unhandled errors
+
+**الإجابة بالعربية:**
+- استخدام FaultRules
+- RaiseFault Policy لإنشاء أخطاء مخصصة
+- AssignMessage لتخصيص رسائل الأخطاء
+- DefaultFaultRule للأخطاء غير المعالجة
+
+**10. What is the difference between API Product and API Proxy? | ما الفرق بين API Product و API Proxy؟**
+
+**English Answer:**
+- **API Proxy**: The actual application that processes requests
+- **API Product**: A collection of API Proxies bundled for developers with Quota and Access Control
+
+**الإجابة بالعربية:**
+- **API Proxy**: التطبيق الفعلي الذي يعالج الطلبات
+- **API Product**: مجموعة من API Proxies يتم تجميعها للمطورين مع Quota وAccess Control
+
+**11. How do you implement Service Callout in Apigee? | كيف تنفذ Service Callout في Apigee؟**
+
+**English Answer:** Use ServiceCallout Policy to call an external service
+
+**الإجابة بالعربية:** استخدام ServiceCallout Policy لاستدعاء خدمة خارجية
+
 ```xml
 <ServiceCallout name="SC-AuthService">
     <Request>
@@ -595,29 +781,57 @@ Client → ProxyEndpoint PreFlow → Conditional Flows → PostFlow
 </ServiceCallout>
 ```
 
-**12. ما هي Key Value Maps (KVM) ومتى تستخدمها؟**
-- **الإجابة**: KVM هي مخزن key-value لحفظ بيانات حساسة:
-  - API Keys
-  - Credentials
-  - Configuration values
-  - يمكن تشفيرها
-  - متاحة على مستوى Organization, Environment, أو API Proxy
+**12. What are Key Value Maps (KVM) and when do you use them? | ما هي Key Value Maps (KVM) ومتى تستخدمها؟**
 
-**13. كيف تنفذ Logging في Apigee؟**
-- **الإجابة**:
-  - MessageLogging Policy للتسجيل في Syslog أو File
-  - ExtractVariables لاستخراج البيانات
-  - JavaScript Policy للتسجيل المخصص
+**English Answer:**
+KVM is a key-value store for saving sensitive data:
+- API Keys
+- Credentials
+- Configuration values
+- Can be encrypted
+- Available at Organization, Environment, or API Proxy level
 
-**14. ما هو API Monetization في Apigee؟**
-- **الإجابة**: خاصية تتيح تحقيق الدخل من APIs:
-  - Rate Plans (Fixed, Variable, Revenue Share)
-  - Billing وPayment Integration
-  - Usage Tracking
-  - Developer Portal Integration
+**الإجابة بالعربية:**
+KVM هي مخزن key-value لحفظ بيانات حساسة:
+- API Keys
+- Credentials
+- Configuration values
+- يمكن تشفيرها
+- متاحة على مستوى Organization, Environment, أو API Proxy
 
-**15. كيف تتعامل مع CORS في Apigee؟**
-- **الإجابة**: استخدام AssignMessage Policy لإضافة CORS Headers:
+**13. How do you implement Logging in Apigee? | كيف تنفذ Logging في Apigee؟**
+
+**English Answer:**
+- MessageLogging Policy for logging to Syslog or File
+- ExtractVariables to extract data
+- JavaScript Policy for custom logging
+
+**الإجابة بالعربية:**
+- MessageLogging Policy للتسجيل في Syslog أو File
+- ExtractVariables لاستخراج البيانات
+- JavaScript Policy للتسجيل المخصص
+
+**14. What is API Monetization in Apigee? | ما هو API Monetization في Apigee؟**
+
+**English Answer:**
+A feature that enables generating revenue from APIs:
+- Rate Plans (Fixed, Variable, Revenue Share)
+- Billing and Payment Integration
+- Usage Tracking
+- Developer Portal Integration
+
+**الإجابة بالعربية:**
+خاصية تتيح تحقيق الدخل من APIs:
+- Rate Plans (Fixed, Variable, Revenue Share)
+- Billing وPayment Integration
+- Usage Tracking
+- Developer Portal Integration
+
+**15. How do you handle CORS in Apigee? | كيف تتعامل مع CORS في Apigee؟**
+
+**English Answer:** Use AssignMessage Policy to add CORS Headers
+
+**الإجابة بالعربية:** استخدام AssignMessage Policy لإضافة CORS Headers
 ```xml
 <AssignMessage name="AM-AddCORS">
     <Set>
@@ -630,52 +844,120 @@ Client → ProxyEndpoint PreFlow → Conditional Flows → PostFlow
 </AssignMessage>
 ```
 
-### أسئلة عن Best Practices
+### Best Practices Questions | أسئلة عن Best Practices
 
-**16. ما هي Best Practices لتصميم API Proxies؟**
-- **الإجابة**:
-  - استخدام Shared Flows للكود المشترك
-  - تطبيق Security في ProxyEndpoint PreFlow
-  - استخدام Response Cache للبيانات المتكررة
-  - تنفيذ Error Handling شامل
-  - استخدام Flow Variables بحكمة
-  - تجنب JavaScript Policies الثقيلة
+**16. What are the Best Practices for designing API Proxies? | ما هي Best Practices لتصميم API Proxies؟**
 
-**17. كيف تؤمن APIs في Apigee؟**
-- **الإجابة**:
-  - API Keys للتحقق الأساسي
-  - OAuth 2.0 للتفويض
-  - JWT للتوكينات
-  - IP Whitelisting/Blacklisting
-  - TLS/SSL للاتصالات الآمنة
-  - Regular Expression Protection من الهجمات
+**English Answer:**
+- Use Shared Flows for common code
+- Apply Security in ProxyEndpoint PreFlow
+- Use Response Cache for repeated data
+- Implement comprehensive Error Handling
+- Use Flow Variables wisely
+- Avoid heavy JavaScript Policies
 
-**18. كيف تراقب أداء APIs في Apigee؟**
-- **الإجابة**:
-  - استخدام Analytics Dashboard
-  - Custom Reports
-  - Alerts وNotifications
-  - API Monitoring في Edge UI
-  - Integration مع Stackdriver (Google Cloud)
+**الإجابة بالعربية:**
+- استخدام Shared Flows للكود المشترك
+- تطبيق Security في ProxyEndpoint PreFlow
+- استخدام Response Cache للبيانات المتكررة
+- تنفيذ Error Handling شامل
+- استخدام Flow Variables بحكمة
+- تجنب JavaScript Policies الثقيلة
 
-**19. ما هي Environment Variables ومتى تستخدمها؟**
-- **الإجابة**: متغيرات تختلف بين البيئات:
-  - Backend URLs مختلفة (Dev, Test, Prod)
-  - API Keys وCredentials
-  - Timeouts وConfigurations
-  - تسهل Deployment عبر البيئات
+**17. How do you secure APIs in Apigee? | كيف تؤمن APIs في Apigee؟**
 
-**20. كيف تنفذ Versioning في Apigee؟**
-- **الإجابة**:
-  - استخدام BasePath مع Version: `/api/v1/users`, `/api/v2/users`
-  - استخدام Header للإصدار: `Accept: application/vnd.api+json; version=2`
-  - Conditional Flows بناءً على الإصدار
-  - Maintain multiple API Proxies للإصدارات المختلفة
+**English Answer:**
+- API Keys for basic verification
+- OAuth 2.0 for authorization
+- JWT for tokens
+- IP Whitelisting/Blacklisting
+- TLS/SSL for secure connections
+- Regular Expression Protection from attacks
+
+**الإجابة بالعربية:**
+- API Keys للتحقق الأساسي
+- OAuth 2.0 للتفويض
+- JWT للتوكينات
+- IP Whitelisting/Blacklisting
+- TLS/SSL للاتصالات الآمنة
+- Regular Expression Protection من الهجمات
+
+**18. How do you monitor API performance in Apigee? | كيف تراقب أداء APIs في Apigee؟**
+
+**English Answer:**
+- Use Analytics Dashboard
+- Custom Reports
+- Alerts and Notifications
+- API Monitoring in Edge UI
+- Integration with Stackdriver (Google Cloud)
+
+**الإجابة بالعربية:**
+- استخدام Analytics Dashboard
+- Custom Reports
+- Alerts وNotifications
+- API Monitoring في Edge UI
+- Integration مع Stackdriver (Google Cloud)
+
+**19. What are Environment Variables and when do you use them? | ما هي Environment Variables ومتى تستخدمها؟**
+
+**English Answer:**
+Variables that differ between environments:
+- Different Backend URLs (Dev, Test, Prod)
+- API Keys and Credentials
+- Timeouts and Configurations
+- Facilitate Deployment across environments
+
+**الإجابة بالعربية:**
+متغيرات تختلف بين البيئات:
+- Backend URLs مختلفة (Dev, Test, Prod)
+- API Keys وCredentials
+- Timeouts وConfigurations
+- تسهل Deployment عبر البيئات
+
+**20. How do you implement Versioning in Apigee? | كيف تنفذ Versioning في Apigee؟**
+
+**English Answer:**
+- Use BasePath with Version: `/api/v1/users`, `/api/v2/users`
+- Use Header for version: `Accept: application/vnd.api+json; version=2`
+- Conditional Flows based on version
+- Maintain multiple API Proxies for different versions
+
+**الإجابة بالعربية:**
+- استخدام BasePath مع Version: `/api/v1/users`, `/api/v2/users`
+- استخدام Header للإصدار: `Accept: application/vnd.api+json; version=2`
+- Conditional Flows بناءً على الإصدار
+- Maintain multiple API Proxies للإصدارات المختلفة
 
 ---
 
-## الخلاصة
+## Summary | الخلاصة
 
+**English:**
+Apigee Edge is a powerful API management platform that provides:
+- ✅ API Gateway with advanced routing and transformation
+- ✅ Comprehensive Security (OAuth, JWT, API Keys)
+- ✅ Traffic Management (Rate Limiting, Quota)
+- ✅ Detailed Analytics and Monitoring
+- ✅ Developer Portal for external developers
+- ✅ Monetization to generate revenue from APIs
+- ✅ Easy Integration with Google Cloud
+
+**When to use Apigee:**
+- When you need complete API Management
+- For large projects with complex requirements
+- When you need advanced Analytics
+- For projects on Google Cloud Platform
+- When you need API Monetization
+
+**Alternatives:**
+- Kong (Open Source)
+- AWS API Gateway
+- Azure API Management
+- MuleSoft Anypoint Platform
+
+---
+
+**العربية:**
 Apigee Edge هو منصة قوية لإدارة APIs توفر:
 - ✅ API Gateway مع توجيه وتحويل متقدم
 - ✅ Security شامل (OAuth, JWT, API Keys)
